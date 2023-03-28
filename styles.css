@@ -14,45 +14,52 @@ html {
     background-color: rgba(0, 0, 0, 0.301);
 }
 
-h1 {
-    margin-bottom: 30px;
-}
-
-#login {
-    background-image: linear-gradient(120deg, var(--cor_degra));
-    width: 400px;
+#caixa {
+    background-image: linear-gradient(120deg, rgba(255, 0, 0, 0.459), rgba(128, 0, 128, 0.473));
+    width: 300px;
     height: 300px;
-    border-radius: 20px;
-    color: white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.404);
+    background-size: cover;
 }
 
-.input {
-    
-    margin-bottom: 20px;
-    background: none;
-    border: none;
-    border-bottom: 1px solid purple;
-    
+#caixa::before {
+    content: "";
+    background: inherit;
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
-#check {
-    display: inline-block;
-    margin-bottom: 20px;
+#blur {
+    position: relative;
+    z-index: 1;
 }
 
-.button {
-    padding: 2px 5px 2px 5px;
-    border-radius: 5px;
-    border: none;
+.butao {
+    padding: 4px;
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 0.589);
+
+    border-radius: 6px;
+    border: rgba(0, 0, 0, 0.452) solid 1px;
+
+}
+
+#frase {
+    color: white;
 }
