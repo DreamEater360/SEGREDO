@@ -4,8 +4,8 @@ const div = document.getElementById("caixa")
 
 sim.addEventListener("click", simPorra) 
 nao.addEventListener("click", () => {
-  const left = Math.floor(Math.random() * 40);
-  const top = Math.floor(Math.random() * 50);
+  const left = Math.floor(Math.random() * 60);
+  const top = Math.floor(Math.random() * 70);
 
   nao.style.left = left + "px";
   nao.style.top = top + "px";
