@@ -15,7 +15,7 @@ nao.addEventListener("click", () => {
 
 function simPorra() {
     const mano = document.getElementById("frase")
-    return mano.innerHTML = "bora"
+    return mano.innerHTML = "Manda print"
 }
 
 
