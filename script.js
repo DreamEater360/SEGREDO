@@ -2,6 +2,7 @@ const sim = document.getElementById("disse_sim")
 const nao = document.getElementById("disse_nao")
 const div = document.getElementById("caixa")
 
+
 sim.addEventListener("click", simPorra) 
 nao.addEventListener("click", () => {
   const left = Math.floor(Math.random() * 60);
@@ -14,9 +15,6 @@ nao.addEventListener("click", () => {
 });
 
 function simPorra() {
-    const mano = document.getElementById("frase")
-    return mano.innerHTML = "Manda print"
+  const mano = document.getElementById("frase")
+  return mano.innerHTML = "&#x2665; Manda print &#x2665;"
 }
-
-
-
